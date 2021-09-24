@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,8 +20,7 @@
         android:id="@+id/titleTV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:maxLines="2"
+        android:textSize="27sp"
         app:layout_constraintStart_toEndOf="@+id/posterIV"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,10 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginStart="5dp"
-        android:textSize="17sp"
-        android:maxLines="6"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/posterIV"
         app:layout_constraintTop_toBottomOf="@+id/titleTV"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Sample Description" />
+        tools:text="Sample Description"
+        android:ellipsize="end"
+        android:inputType="none"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
